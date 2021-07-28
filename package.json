@@ -8,7 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.13.2"
+    "body-parser": "^1.13.2",
+    "log4js": "^0.6.36"
   },
   "devDependencies": {},
   "description": ""
