@@ -17,7 +17,11 @@ steps:
     echo See https://aka.ms/yaml
     displayName: 'Run a multi-line script'
 - task: CmdLine@2
-  displayName: 'WhiteSource Scan !!'
+  displayName: 'Start WhiteSource Scan'
   enabled: true
   continueOnError: false
+  inputs:
+    script: |
+      echo Downloading WhiteSource Unified Agent
+      curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
 
