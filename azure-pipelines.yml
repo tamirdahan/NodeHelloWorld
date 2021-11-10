@@ -16,9 +16,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
     displayName: 'Run a multi-line script'
-steps:
-  - task: CmdLine@2
-    displayName: 'WhiteSource Scan !!'
-    enabled: true
-    continueOnError: false
+- task: CmdLine@2
+  displayName: 'WhiteSource Scan !!'
+  enabled: true
+  continueOnError: false
 
