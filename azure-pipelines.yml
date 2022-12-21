@@ -23,6 +23,6 @@ steps:
 - task: JFrogToolsInstaller@1
   inputs:
     artifactoryConnection: 'jfrog artifactory'
-    cliInstallationRepo: 'jfrog-cli-remote'
+    cliInstallationRepo: 'npm-pipeline-virtual-npm-local'
     installExtractors: true
     extractorsInstallationRepo: 'extractors'
