@@ -20,9 +20,14 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: JFrogToolsInstaller@1
+   
+- task: JFrogNpm@1
   inputs:
+    command: 'install'
     artifactoryConnection: 'ArtifactoryConnection'
-    cliInstallationRepo: 'npm-pipeline-virtual-npm'
-    installExtractors: true
-    extractorsInstallationRepo: 'extractors'
+    sourceRepo: 'npm-pipeline-virtual-npm'
+    collectBuildInfo: true
+    threads: '1'
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
+    includeEnvVars: true
