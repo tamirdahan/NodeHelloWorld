@@ -23,7 +23,7 @@ steps:
 - task: JFrogNpm@1
   inputs:
     command: 'install'
-    artifactoryConnection: 'artifactory v22'
+    artifactoryConnection: 'ArtifactoryConnection'
     sourceRepo: 'npm-pipeline-virtual-npm'
     collectBuildInfo: true
     threads: '1'
