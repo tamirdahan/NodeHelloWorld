@@ -30,9 +30,26 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     includeEnvVars: true
+
+#- task: JFrogGenericArtifacts@1
+#  inputs:
+#    command: 'Upload'
+#    connection: 'ArtifactoryConnection'
+#    specSource: 'taskConfiguration'
+#    fileSpec: |
+#      {
+#        "files": [
+#          {
+#            "pattern": "*.js",
+#            "target": "npm-pipeline-virtual-npm-local/src/"
+#          }
+#        ]
+#      }
+#    failNoOp: true
+
 - task: JFrogGenericArtifacts@1
   inputs:
-    command: 'Upload'
+    command: 'Download'
     connection: 'ArtifactoryConnection'
     specSource: 'taskConfiguration'
     fileSpec: |
@@ -40,7 +57,7 @@ steps:
         "files": [
           {
             "pattern": "*.js",
-            "target": "npm-pipeline-virtual-npm-local/src/"
+            "target": "\TTamir\"
           }
         ]
       }
