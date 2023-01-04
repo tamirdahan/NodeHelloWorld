@@ -57,7 +57,7 @@ steps:
         "files": [
           {
             "pattern": "*.js",
-            "target": "\TTamir\"
+            "target": "local/output/"
           }
         ]
       }
