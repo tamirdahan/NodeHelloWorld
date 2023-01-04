@@ -40,7 +40,7 @@ steps:
         "files": [
           {
             "pattern": "*.js",
-            "target": "npm-pipeline-virtual-npm-local/src"
+            "target": "npm-pipeline-virtual-npm-local/src/"
           }
         ]
       }
