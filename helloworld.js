@@ -2,7 +2,7 @@ const { createServer } = require('http');
 const PORT = parseInt(process.env.PORT, 10) || 3000;
 
 const server = createServer((req, res) => {
-  res.statusCode = 200;
+  res.statusCode = 300;
   res.setHeader('Content-Type', 'text/html');
   res.end('<h1>Hello  World</h1>');
 });
